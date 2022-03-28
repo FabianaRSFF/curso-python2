@@ -152,4 +152,46 @@ print('############')
 
 l_coluna2 = l[:, 1]
 print(l_coluna2)
+print('############')
+# Adição e multiplicação de matrizes:
 
+n = np.array([[1, 2], [3, 4]])
+o = np.array([[4, 5], [6, 7]])
+res1 = n + o
+print( n + o )
+print('############')
+# Multiplicação de matrizes:
+print(n * o)
+print('############')
+
+# Transposição e rearranjo de um conjunto de 15 elementos de 0 a 14
+# Em 3 linhas e 5 colunas:
+
+f = np.arange(15).reshape(3, 5)
+print(f)
+s = f.T
+print(s)
+print('############')
+
+# Outra forma de fazer
+
+r = np.arange(15).reshape(3, 5)
+v = r.transpose(1, 0)
+print(v)
+print('############')
+
+# Expressões lógicas usando where, 
+# criando matriz usando valores aleatórios positivos e negativos:
+
+x = np.random.randn(4, 4)
+print(x)
+print('############')
+
+# Criando matriz com valores booleanos no array x
+y = (x > 0)
+print(y)
+
+print('############')
+# Criando matriz com valores -1 e 1 no array x
+z = np.where(x >0, 1, -1)
+print(z)
