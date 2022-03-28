@@ -117,3 +117,39 @@ print('#########')
 
 print(np.exp(k1))
 ("#################")
+
+# Extração de elementos:
+
+m = np.array([1, 2, 3, 4, 5, 6])
+# Mostra o elemento da posição 2:
+print(m[1])
+print(m[0:2])
+print('######################')
+
+# Mostra da segunda posição até o final:
+
+print(m[1:])
+print('################')
+
+# Extração de linhas e colunas:
+
+l = np.array([[1, 2, 3,], [1, 2, 3], [1, 2, 3]])
+print(l)
+print('#############')
+l_linha1 = l[0, :]
+print(l_linha1)
+print('############')
+l_linha2 = l[1, :]
+print(l_linha2)
+print('############')
+
+# Todas as linhas, primeira coluna:
+
+l_coluna1 = l[:, 0]
+print(l_coluna1)
+print('############')
+# Todas as linhas, segunda coluna:
+
+l_coluna2 = l[:, 1]
+print(l_coluna2)
+
